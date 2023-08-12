@@ -11,7 +11,8 @@ body, h1, p, ul, li, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .logo a {
@@ -23,7 +24,7 @@ body, h1, p, ul, li, a {
 }
 
 .logo img {
-    max-width: 40px;
+    max-width: 100px;
     margin-right: 10px;
 }
 
@@ -44,6 +45,126 @@ body, h1, p, ul, li, a {
 
 .nav-list a:hover {
     color: #ff6600;
+}
+
+/* Upcoming Events section styles */
+.upcoming-events {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.upcoming-events-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.upcoming-events h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.event {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.event img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.event h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.event p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.event .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event .btn:hover {
+    background-color: #e65100;
+}
+
+/* News section styles */
+.news {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.news-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.news h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.post {
+    text-align: left; 
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.post-content {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    gap: 20px; /* Gap between image and text */
+}
+
+.post-img {
+    max-width: 350px;
+}
+
+.post h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.post p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.post .btn:hover {
+    background-color: #e65100;
 }
 
 /* Footer section styles */
@@ -76,7 +197,7 @@ body, h1, p, ul, li, a {
     background-image: url('images/backgroundimage.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     text-align: center;
     padding: 150px 0;
 }
@@ -111,12 +232,41 @@ body, h1, p, ul, li, a {
     background-color: #e65100;
 }
 
+/* Schedule Board section styles */
+.schedule-board {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.schedule-board h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
 
 /* About section styles */
 .about {
     background-color: #f4f4f4;
     padding: 100px 0;
-    text-align: center;
 }
 
 .about-content {
@@ -128,6 +278,12 @@ body, h1, p, ul, li, a {
 .about h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.about li {
+    list-style: decimal;
+    padding-bottom: 1rem;
 }
 
 .about p {
@@ -156,7 +312,7 @@ body, h1, p, ul, li, a {
 
 .teacher-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -204,21 +360,24 @@ body, h1, p, ul, li, a {
 
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .course {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 .course img {
-    max-width: 150px;
-    border-radius: 5px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -230,6 +389,27 @@ body, h1, p, ul, li, a {
 .course p {
     font-size: 18px;
     color: #777;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.enroll-button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+    background-color: #45a049;
 }
 
 .see-more {
@@ -280,53 +460,81 @@ body, h1, p, ul, li, a {
 }
 
 /* Contact section styles */
-.contact {
-    background-color: #f9f9f9;
+.contact-section {
+    background-color: #f4f4f4;
     padding: 100px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.contact-content {
-    max-width: 800px;
+.contact-container {
+    max-width: 1200px; /* Adjust this value to your needs */
+    display: flex;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.contact h2 {
+.map-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.map-container p {
+    margin-bottom: 20px;
+}
+
+.map h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-.contact p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+.map {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
+.contact-form {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 28px;
     margin-bottom: 20px;
+}
+
+.contact-form form label {
+    margin-bottom: 5px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form textarea {
-    height: 150px;
-}
-
-form button {
+.contact-form form button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 20px;
     background-color: #ff6600;
     color: white;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
+.contact-form form button:hover {
     background-color: #e65100;
 }

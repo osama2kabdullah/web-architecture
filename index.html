@@ -3,28 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="/images/logobg.png" alt="Your Logo"></a>
+            <a href="index.html"><img src="images/logobg.png" alt="Your Logo"></a>
         </div>
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/cources.html">Courses</a></li>
-            <li><a href="/pages/gallery.html">Gallery</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/cources.html">Courses</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
         </ul>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to Our Website</h1>
-            <p>Your tagline goes here.</p>
-            <a href="#" class="btn">Learn More</a>
+            <h1>Welcome to LearnVerse</h1>
+            <p>Unlock Your Potential, Embrace Learning Excellence.</p>
+            <a href="pages/cources.html" class="btn">Explore Our Courses</a>
+        </div>
+    </section>
+
+    <section class="schedule-board">
+        <div class="table-container">
+            <h2>Schedule Board</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td>Course A</td>
+                        <td>Course B</td>
+                        <td>Course C</td>
+                        <td>Course D</td>
+                        <td>Course E</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Course F</td>
+                        <td>Course G</td>
+                        <td>Course H</td>
+                        <td>Course I</td>
+                        <td>Course J</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Course K</td>
+                        <td>Course L</td>
+                        <td>Course M</td>
+                        <td>Course N</td>
+                        <td>Course O</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM</td>
+                        <td>Course P</td>
+                        <td>Course Q</td>
+                        <td>Course R</td>
+                        <td>Course S</td>
+                        <td>Course T</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -33,30 +86,79 @@
             <h2>Our Courses</h2>
             <div class="course-grid">
                 <div class="course">
-                    <img src="course1.jpg" alt="Course 1">
-                    <h3>Web Development</h3>
-                    <p>Learn to build modern websites. Includes HTML, CSS, and JavaScript.</p>
-                    <p>Price: $199</p>
+                    <img src="https://picsum.photos/id/1/720/500" alt="Course 1" class="course-img">
+                    <h3 class="course-title">Web Development</h3>
+                    <p class="course-description">Learn to build modern websites. Includes HTML, CSS, and JavaScript.</p>
+                    <p class="course-price">$199</p>
+                    <button class="enroll-button">Enroll</button>
                 </div>
                 <div class="course">
-                    <img src="course2.jpg" alt="Course 2">
-                    <h3>Graphic Design</h3>
-                    <p>Unlock your creativity with digital design tools and techniques.</p>
-                    <p>Price: $149</p>
-                </div>
-                <!-- Add more course descriptions here -->
+                    <img src="images/IELTS.jpg" alt="IELTS Course" class="course-img">
+                    <h3 class="course-title">IELTS Preparation</h3>
+                    <p class="course-description">Prepare for the IELTS exam and improve your English language skills.</p>
+                    <p class="course-price">$299</p>
+                    <button class="enroll-button">Enroll</button>
+                </div>                
             </div>
             <div class="see-more">
-                <a href="#" class="btn">See More</a>
+                <a href="pages/cources.html" class="btn">See More</a>
             </div>
         </div>
     </section>
 
+    <section class="upcoming-events">
+        <div class="upcoming-events-content">
+            <h2>Upcoming Events or Workshops</h2>
+            <div class="event">
+                <img src="images/post-1.jpg" alt="Event 1">
+                <h3>Web Development Workshop</h3>
+                <p>Date: October 15, 2023</p>
+                <p>Time: 10:00 AM - 2:00 PM</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="event">
+                <img src="images/post-2.jpg" alt="Event 2">
+                <h3>Graphic Design Seminar</h3>
+                <p>Date: November 5, 2023</p>
+                <p>Time: 3:00 PM - 6:00 PM</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <!-- Add more events or workshops here -->
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news-content">
+            <h2>Latest News and Blog Posts</h2>
+            <div class="post">
+                <div class="post-content">
+                    <img src="images/course-1.jpg" alt="Post 1" class="post-img">
+                    <div class="post-text">
+                        <h3>10 Essential Web Development Tools</h3>
+                        <p>Posted on September 20, 2023</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-content">
+                    <img src="images/course-3.jpg" alt="Post 1" class="post-img">
+                    <div class="post-text">
+                        <h3>Design Principles for Stunning Graphics</h3>
+                        <p>Posted on October 5, 2023</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer">
         <div class="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
         <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>

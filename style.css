@@ -310,9 +310,9 @@ table th, table td {
     margin-bottom: 20px;
 }
 
-.teacher-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+.teacher-box {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -322,6 +322,7 @@ table th, table td {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 26%;
 }
 
 .teacher img {
@@ -358,9 +359,9 @@ table th, table td {
     margin-bottom: 20px;
 }
 
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+.course-box {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -374,6 +375,7 @@ table th, table td {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    width: 48%;
 }
 
 .course img {
@@ -448,14 +450,14 @@ table th, table td {
     margin-bottom: 20px;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.gallery-box {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .gallery img {
-    max-width: 100%;
+    max-width: 30%;
     border-radius: 5px;
 }
 
